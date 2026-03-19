@@ -6,6 +6,36 @@
     <meta charset="utf-8">
     <title> demo </title>
     <style>
+        ul{
+        list-style-type: none;
+        margin:0;
+        padding: 0;
+        }
+        ul li a{
+        color: white;
+        text-decoration:none;
+        background:plum;
+        text-align:center;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width:150px;
+        height: 30px;
+        margin:10px;
+        border:4px solid white;
+        border-radius:10px;
+        box-shadow:-5px 5px 0px rgb(207, 62, 62);
+        scale: 1;
+        transition:scale .5s,box-shadow .5s,color .5s;
+        
+        }
+
+        ul li a:hover{
+        background:rgb(207, 96, 133);
+        color:white;
+        scale:1.1;
+        }
+        
         body {
             background-color: pink;
             color: aliceblue;
@@ -15,23 +45,27 @@
             }
 
             .ralph {
-                color: palevioletred;
+                color: rgb(204, 88, 127);
                 font-family:monospace
             }
             
         a {
             color: aliceblue;
         }
+        #tom {
+            color: rgb(220, 58, 112);
+        }
     </style>
 </head>
 
 <body>
     <h1> Hi my names Kaylee.</h1>
-    <h2 class="ralph">This is <span id="tom">my</span> page</h2>
+    <h2 class="ralph">This is <span id="tom">MY</span> page</h2>
     <h3 class="ralph">I'm copying a demo.</h3>
     <ul>
-        <li><a href="text.html">My Website</a></li>
-        <li><a href="quote.html"> Quotes</a></li>
+        <li><a href="text.html">Text</a></li>
+        <li><a href="quote.html">Quotes</a></li>
+        <li><a href="boxes.html">Boxes</a></li>
     </ul>
 </body>
 
