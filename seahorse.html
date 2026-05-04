@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>seahorse serenity</title>
+  <style>
+    body {
+      display: grid;
+      grid-template-columns: 3fr 7fr;
+      grid-template-rows: 200px 1fr 200px;
+      gap: 20px 20px;
+      grid-auto-flow: row;
+      max-width: 1200px;
+      margin: auto;
+      grid-template-areas:
+        "header header"
+        "nav artical"
+        "Feet Feet";
+      background-color: rgb(56, 158, 127);
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      background: rgb(101, 200, 136);
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 50px;
+      margin: 100px;
+      margin-bottom: 100px;
+      border: 5px solid white;
+      border-radius: 10px;
+      box-shadow: -5px 5px 0px #50875e;
+      scale: 1.5;
+      transition: scale .8s, box-shadow .5s, color .5s;
+    }
+
+    nav li a:hover {
+      background: rgb(103, 166, 113);
+      color: white;
+      scale: 1.1;
+    }
+
+    footer li {
+      display: inline-block;
+    }
+
+    header {
+      grid-area: header;
+      text-align: center;
+      color: white;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      border: 5px solid rgb(222, 231, 224);
+      background-color: rgb(92, 144, 131);
+      background-size: cover;
+      background-position: center center;
+    }
+
+    header h1 {
+      color: white;
+      text-decoration: none;
+      background: rgb(101, 200, 136);
+      text-align: center;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      width: 500px;
+      height: 50px;
+      margin: auto;
+      border: 5px solid white;
+      border-radius: 10px;
+      box-shadow: -5px 5px 0px #50875e;
+      margin-top: 55px;
+    }
+
+
+    footer {
+      grid-area: Feet;
+      background-color: rgb(48, 184, 171);
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      border: 5px solid rgb(222, 231, 224);
+    }
+
+    article {
+      grid-area: artical;
+      background-color: rgb(136, 185, 169);
+      border: 5px solid rgb(222, 231, 224);
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      grid-area: nav;
+      background-color: rgb(105, 201, 180);
+      border: 5px solid rgb(222, 231, 224);
+
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+    }
+    article h1 {
+      color: white;
+      text-decoration: none;
+      background: rgb(105, 200, 136);
+      text-align: center;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      width: 500px;
+      height: 50px;
+      margin: auto;
+      border: 5px solid white;
+      border-radius: 10px;
+      box-shadow: -5px 5px 0px #50875e;
+      margin-top: 55px;
+    }
+    article h2 {
+      color: white;
+      text-decoration: none;
+      background: rgb(137, 204, 161);
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 220px;
+      height: 50px;
+      margin-left: 20px;
+      margin-top: 55px; border: 5px solid white;
+      border-radius:10px;
+      box-shadow: -5px 5px 0px #50875e;
+    }
+    article p {
+    font-size: 1.6rem;
+    color: white;
+    font-family: monospace;
+    }
+    article img{
+        border: 5px solid white;
+      border-radius:10px;
+      box-shadow: -5px 5px 0px #50875e;
+    }
+
+    .left {
+      width: 70%;
+    }
+
+    .right {
+      width: 28%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .right img {
+      width: 100%;
+    }
+
+    .text-and-images {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>header info here</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Seahorse Home</a></li>
+      <li><a href="#">Seahorse News</a></li>
+      <li><a href="#">Seahorse Science</a></li>
+      <li><a href="#">Seahorse Fiction</a></li>
+      <li><a href="#">Seahorse Fables</a></li>
+      <li><a href="#">Seahorse Songs</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1 style="height: fit-content; margin-bottom: 20px; margin-top: 0; font-size: 2.5rem;">SEAHORSE FACTS</h1>
+
+    <div class="text-and-images">
+      <div class="left">
+        <h2>Name</h2>
+        <p> The Latin name for seahorse is Hippocampus which means "Horse
+          Caterpillar"</p>
+        <h2>What is a Seahorse?</h2>
+        <p> Seahorses are fish. They live in water, breath through gills and have a
+          swim bladder. However they do not have caudal fins and have a long
+          snake-like tail. They also have a neck and a snout that points down.</p>
+      </div>
+
+      <div class="right">
+        <img src="Seahorse-7.png" alt="seahorses are fun" />
+        <img src="seah.psd" alt="Description of image">
+
+      </div>
+    </div>
+    <h2>Eyesight</h2>
+    <p> Seahorses have excellent eyesight and their eyes are able to work
+      independently on either side of their head. This means they can look
+      forwards and backwards at the same time! This is particularly useful as
+      they hunt for food by sight.</p>
+    <h2>Snout</h2>
+    <p> Seahorses have long thin snouts enabling them to probe into nooks and
+      crannies for food. When they find food they suck it up through their
+      snouts like a vacuum cleaner. Their snouts can expand if their prey is
+      larger than the snout. They are not able to chew and have to
+      disintegrate the food as they eat it.</p>
+    <h2>Diet</h2>
+    <p> Seahorses eat small crustacea such as Mysis Shrimp. An adult eats 30-50
+      times a day. Seahorse fry (baby seahorses) eat a staggering 3000 pieces
+      of food per day.</p>
+    <h2>Tail</h2>
+    <p> Seahorses have a prehensile tail. This allows them to grip onto
+      eelgrass and other weeds and prevents them from being washed away by
+      strong currents and waves.</p>
+    <h2>Colour</h2>
+    <p> Seahorses can change colour very quickly and match any surroundings in
+      which it finds itself. They have even been known to turn bright red to
+      match floating debris.</p>
+    <p> Both males and females also change colour during their courtship
+      display.</p>
+    <h2>Body</h2>
+    <p> Unlike most other fish, seahorses have an exoskeleton. Their bodies are
+      made up of hard, external, bony plates that are fused together with a
+      fleshy covering. They do not have scales.</p>
+  </article>
+
+  <footer>
+    <ul>
+      <li>Seahorse Friends:</li>
+      <li><a href="http://www.theseahorsetrust.org/seahorse-facts.aspx" target="_blank">The Seahorse Trust</a> |</li>
+      <li><a href="http://www.nationalgeographic.com/animals/fish/group/seahorses/" target="_blank">National
+          Geographic</a> |</li>
+      <li><a href="http://seahorse.com/" target="_blank">Seahorse.com</a> |</li>
+      <li><a href="http://www.allthesea.com/Seahorses.html" target="_blank">All
+          The Sea</a></li>
+    </ul>
+    <p>&copy; Seahorse Serenity 2025</p>
+  </footer>
+</body>
+
+</html>
